@@ -1,0 +1,70 @@
+const C3 = self.C3;
+self.C3_GetObjectRefTable = function () {
+	return [
+		C3.Plugins.Sprite,
+		C3.Behaviors.DragnDrop,
+		C3.Behaviors.MoveTo,
+		C3.Behaviors.bound,
+		C3.Behaviors.Sin,
+		C3.Plugins.Touch,
+		C3.Plugins.Touch.Cnds.IsTouchingObject,
+		C3.Plugins.System.Acts.GoToLayout,
+		C3.Plugins.System.Cnds.OnLayoutStart,
+		C3.Behaviors.MoveTo.Acts.MoveToObject,
+		C3.Plugins.Sprite.Cnds.IsOverlapping,
+		C3.Plugins.Sprite.Acts.SetPosToObject
+	];
+};
+self.C3_JsPropNameTable = [
+	{Image: 0},
+	{AccueilJeuEscalier: 0},
+	{Groupe: 0},
+	{DragDrop: 0},
+	{MoveTo: 0},
+	{BoundToLayout: 0},
+	{Image2: 0},
+	{Layout: 0},
+	{Groupe2: 0},
+	{Groupe3: 0},
+	{Sine: 0},
+	{ChatGPTImage26août202519_24_28_0000_Calque: 0},
+	{ChatGPTImage26août202519_24_28_0001_Calque: 0},
+	{ChatGPTImage26août202519_24_28_0002_Calque: 0},
+	{ChatGPTImage26août202519_24_28_0001_Calque2: 0},
+	{ChatGPTImage26août202519_24_28_0000_Calque2: 0},
+	{Do: 0},
+	{Re: 0},
+	{Sart: 0},
+	{Touch: 0},
+	{Mi: 0},
+	{Fa: 0},
+	{Sol: 0},
+	{La: 0},
+	{Si: 0},
+	{Do2: 0}
+];
+
+self.InstanceType = {
+	Image: class extends self.ISpriteInstance {},
+	AccueilJeuEscalier: class extends self.ISpriteInstance {},
+	Groupe: class extends self.ISpriteInstance {},
+	Image2: class extends self.ISpriteInstance {},
+	Layout: class extends self.ISpriteInstance {},
+	Groupe2: class extends self.ISpriteInstance {},
+	Groupe3: class extends self.ISpriteInstance {},
+	ChatGPTImage26août202519_24_28_0000_Calque: class extends self.ISpriteInstance {},
+	ChatGPTImage26août202519_24_28_0001_Calque: class extends self.ISpriteInstance {},
+	ChatGPTImage26août202519_24_28_0002_Calque: class extends self.ISpriteInstance {},
+	ChatGPTImage26août202519_24_28_0001_Calque2: class extends self.ISpriteInstance {},
+	ChatGPTImage26août202519_24_28_0000_Calque2: class extends self.ISpriteInstance {},
+	Do: class extends self.ISpriteInstance {},
+	Re: class extends self.ISpriteInstance {},
+	Sart: class extends self.ISpriteInstance {},
+	Touch: class extends self.IInstance {},
+	Mi: class extends self.ISpriteInstance {},
+	Fa: class extends self.ISpriteInstance {},
+	Sol: class extends self.ISpriteInstance {},
+	La: class extends self.ISpriteInstance {},
+	Si: class extends self.ISpriteInstance {},
+	Do2: class extends self.ISpriteInstance {}
+}
